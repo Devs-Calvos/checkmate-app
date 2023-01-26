@@ -2,7 +2,7 @@ import logoImg from '@assets/logo.png'
 import { Tasks } from '@components/NativeBaseComponents/HomeScreenComponents/tasks'
 import { NoHaveTasks } from '@components/NoHaveTasks'
 import { Ionicons } from '@expo/vector-icons'
-import { useTheme, VStack, Image, Input, Button, Icon, HStack, Text, View } from 'native-base'
+import { useTheme, VStack, Image, Input, Button, Icon, HStack, Text, View, FlatList } from 'native-base'
 import { useState } from 'react'
 
 export function Home() {
@@ -77,7 +77,11 @@ export function Home() {
           </View>
         </HStack>
       </HStack>
-      {tasks.length > 0 ? <Tasks /> : <NoHaveTasks />}
+      {tasks.length > 0 ? (
+        <FlatList data={tasks} keyExtractor={item => item} renderItem={({ item }) => <Tasks description={item} />} />
+      ) : (
+        <NoHaveTasks />
+      )}
     </VStack>
   )
 }

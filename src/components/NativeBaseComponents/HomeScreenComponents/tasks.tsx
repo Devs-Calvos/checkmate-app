@@ -1,7 +1,11 @@
 import { MaterialCommunityIcons } from '@expo/vector-icons'
 import { Box, Checkbox, HStack, Icon, useTheme } from 'native-base'
 
-export function Tasks() {
+type tasksProps = {
+  description: string
+}
+
+export function Tasks({ description }: tasksProps) {
   const { colors, fonts } = useTheme()
   return (
     <HStack alignItems="center" alignSelf="center">
@@ -30,7 +34,7 @@ export function Tasks() {
           width={6}
           height={6}
         />
-        Lavar a roupa amanhã
+        {description}
         <Icon
           as={MaterialCommunityIcons}
           name="trash-can-outline"
