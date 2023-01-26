@@ -1,4 +1,5 @@
 import logoImg from '@assets/logo.png'
+import { NoHaveTasks } from '@components/NoHaveTasks'
 import { Ionicons } from '@expo/vector-icons'
 import { useTheme, VStack, Image, Input, Button, Icon, HStack, Text, View } from 'native-base'
 import { useState } from 'react'
@@ -39,7 +40,7 @@ export function Home() {
       </HStack>
       <HStack marginTop={sizes[14]} alignItems="center" justifyContent="space-around">
         <HStack>
-          <Text color={colors.blue.default} fontWeight="bold" fontFamily={fonts.BOLD}>
+          <Text color={colors.blue.default} fontFamily={fonts.BOLD}>
             Criadas
           </Text>
           <View
@@ -51,13 +52,13 @@ export function Home() {
             alignItems="center"
             alignSelf="center"
           >
-            <Text color={colors.gray[100]} fontWeight="bold" fontSize={13}>
+            <Text color={colors.gray[100]} fontSize={13}>
               0
             </Text>
           </View>
         </HStack>
         <HStack>
-          <Text color={colors.purple.default} fontWeight="bold" fontFamily={fonts.BOLD}>
+          <Text color={colors.purple.default} fontFamily={fonts.BOLD}>
             Concluidas
           </Text>
           <View
@@ -75,6 +76,7 @@ export function Home() {
           </View>
         </HStack>
       </HStack>
+      {tasks.length > 0 ? undefined : <NoHaveTasks />}
     </VStack>
   )
 }

@@ -28,6 +28,7 @@ export const theme = extendTheme({
     BOLD: 'Inter_700Bold'
   },
   sizes: {
-    14: 55
+    14: 55,
+    85: 85
   }
 })
