@@ -1,4 +1,5 @@
 import logoImg from '@assets/logo.png'
+import { Tasks } from '@components/NativeBaseComponents/HomeScreenComponents/tasks'
 import { NoHaveTasks } from '@components/NoHaveTasks'
 import { Ionicons } from '@expo/vector-icons'
 import { useTheme, VStack, Image, Input, Button, Icon, HStack, Text, View } from 'native-base'
@@ -76,7 +77,7 @@ export function Home() {
           </View>
         </HStack>
       </HStack>
-      {tasks.length > 0 ? undefined : <NoHaveTasks />}
+      {tasks.length > 0 ? <Tasks /> : <NoHaveTasks />}
     </VStack>
   )
 }
