@@ -1,28 +1,33 @@
-export default {
-  COLORS: {
-    GRAY_100: '#E1E1E6',
-    GRAY_200: '#C4C4CC',
-    GRAY_300: '#7C7C8A',
-    GRAY_400: '#323238',
-    GRAY_500: '#29292E',
-    GRAY_600: '#202024',
-    GRAY_700: '#121214',
+import { extendTheme } from 'native-base'
 
-    PURPLE: '#8284FA',
-    PURPLE_DARK: '#5E60CE',
-
-    BLUE: '#4EA8DE',
-    BLUE_DARK: '#1E6F9F',
-
-    Danger: '#E25858'
+export const theme = extendTheme({
+  colors: {
+    gray: {
+      100: '#F2F2F2',
+      200: '#D9D9D9',
+      300: '#808080',
+      400: '#333333',
+      500: '#262626',
+      600: '#1A1A1A',
+      700: '#0D0D0D'
+    },
+    purple: {
+      default: '#8284FA',
+      dark: '#5E60CE'
+    },
+    blue: {
+      default: '#4EA8DE',
+      dark: '#1E6F9F'
+    },
+    red: {
+      danger: '#E25858'
+    }
   },
-  FONT_FAMILY: {
+  fonts: {
     REGULAR: 'Inter_400Regular',
     BOLD: 'Inter_700Bold'
   },
-  FONT_SIZE: {
-    SM: 12,
-    MD: 14,
-    LG: 16
+  sizes: {
+    14: 55
   }
-}
+})
