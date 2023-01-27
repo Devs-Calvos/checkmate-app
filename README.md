@@ -7,16 +7,9 @@
 </p>
 
 <p align="center">
-  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/mateusabelli/ignite-todo-app">
-  <img alt="GitHub" src="https://img.shields.io/github/license/mateusabelli/ignite-todo-app">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/mateusabelli/ignite-todo-app">
-  <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/mateusabelli/ignite-todo-app?style=social">
-</p>
-
-<p align="center">
  <a href="#-sobre-o-projeto">Sobre</a> •
  <a href="#-tecnologias-utilizadas">Tecnologias</a> • 
- <a href="#-instalação-e-uso">Instalação</a> • 
+ <a href="#-instalação-e-uso">Instalação</a>
 </p>
 
 <h4 align="center"> 
@@ -48,7 +41,8 @@ CRUD(Create, Read, Update, Delete), e também praticar uma biblioteca diferente 
 ### Mobile
 
 <p align="left">
-
+<img src="./.github/MobileApp1.jpg" width="35%">
+<img src="./.github/MobileApp4.jpg" width="35%">
 </p>
 
 ## 🔨 Tecnologias utilizadas
